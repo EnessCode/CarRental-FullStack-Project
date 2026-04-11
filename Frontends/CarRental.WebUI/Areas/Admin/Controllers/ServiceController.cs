@@ -7,7 +7,7 @@ using System.Text;
 namespace CarRental.WebUI.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	public class ServiceController(IHttpClientFactory httpClientFactory) : Controller
+	public class ServiceController(IHttpClientFactory httpClientFactory) : BaseAdminController
 	{
 		public async Task<IActionResult> Index()
 		{

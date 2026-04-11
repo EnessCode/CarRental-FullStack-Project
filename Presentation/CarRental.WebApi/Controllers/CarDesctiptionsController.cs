@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace CarRental.WebApi.Controllers
 {
+	[Area("Admin")]
 	[Route("api/[controller]")]
 	[ApiController]
 	public class CarDescriptionsController(IMediator mediator) : ControllerBase

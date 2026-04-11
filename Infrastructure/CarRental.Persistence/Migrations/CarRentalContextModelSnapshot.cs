@@ -75,7 +75,19 @@ namespace CarRental.Persistence.Migrations
                     b.Property<int>("AppRoleId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Surname")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

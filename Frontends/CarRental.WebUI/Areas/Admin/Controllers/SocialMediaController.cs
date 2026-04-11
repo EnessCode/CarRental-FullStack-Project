@@ -7,7 +7,7 @@ using System.Text;
 namespace CarRental.WebUI.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	public class SocialMediaController(IHttpClientFactory httpClientFactory) : Controller
+	public class SocialMediaController(IHttpClientFactory httpClientFactory) : BaseAdminController
 	{
 		public async Task<IActionResult> Index()
 		{

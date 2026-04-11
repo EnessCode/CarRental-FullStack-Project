@@ -9,7 +9,7 @@ namespace CarRental.WebUI.Areas.Admin.Controllers
 {
 	[Area("Admin")]
 
-	public class BlogController(IHttpClientFactory httpClientFactory) : Controller
+	public class BlogController(IHttpClientFactory httpClientFactory) : BaseAdminController
 	{
 		public async Task<IActionResult> Index()
 		{

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CarRental.WebApi.Controllers
 {
+	[Area("Admin")]
 	[Route("api/[controller]")]
 	[ApiController]
 	public class ReservationsController(IMediator mediator) : ControllerBase

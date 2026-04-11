@@ -3,7 +3,7 @@
 namespace CarRental.WebUI.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	public class DashboardController : Controller
+	public class DashboardController : BaseAdminController
 	{
 		public IActionResult Index()
 		{

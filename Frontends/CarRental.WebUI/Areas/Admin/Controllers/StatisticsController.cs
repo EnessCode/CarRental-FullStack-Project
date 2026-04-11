@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 namespace CarRental.WebUI.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	public class StatisticsController(IHttpClientFactory httpClientFactory) : Controller
+	public class StatisticsController(IHttpClientFactory httpClientFactory) : BaseAdminController
 	{
 		public async Task<IActionResult> Index()
 		{

@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -27,6 +28,11 @@ namespace CarRental.Persistence.Repositories.CommentRepositories
 				CreatedDate = x.CreatedDate,
 				Description = x.Description
 			}).ToListAsync();
+		}
+
+		public async Task<Comment?> GetByFilterAsync(Expression<Func<Comment, bool>> filter)
+		{
+			return await context.Comments.SingleOrDefaultAsync(filter);
 		}
 
 		public async Task<Comment> GetByIdAsync(int id)
