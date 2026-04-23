@@ -16,6 +16,7 @@ using CarRental.Application.Interfaces.TagCloudInterfaces;
 using CarRental.Application.Services;
 using CarRental.Application.Tools;
 using CarRental.Application.Validators.AppUserValidators;
+using CarRental.Infrastructure.Services;
 using CarRental.Persistence.Context;
 using CarRental.Persistence.Repositories;
 using CarRental.Persistence.Repositories.BlogRepositories;
@@ -72,6 +73,7 @@ builder.Services.AddScoped<ICarFeatureRepository, CarFeatureRepository>();
 builder.Services.AddScoped<ICarDescriptionRepository, CarDescriptionRepository>();
 builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
 builder.Services.AddScoped<IRentACarProcessRepository, RentACarProcessRepository>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<JwtTokenGenerator>();
 
 builder.Services.AddApplicationService(builder.Configuration);
