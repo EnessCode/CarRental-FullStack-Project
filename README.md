@@ -25,40 +25,58 @@ Güvenli giriş, kayıt ve profil yönetim ekranları.
 <p align="center">
   <img src="screenshots/login.png" width="31%" alt="Giriş Yap" />
   <img src="screenshots/register.png" width="31%" alt="Kayıt Ol" />
-  <img src="screenshots/moderator-profile.png" width="31%" alt="Profilim" />
 </p>
 <p align="center">
-  <em>(Sırasıyla: Giriş Yap, Kayıt Ol, Profil Sayfası)</em>
-</p>
-
----
-
-### 🚗 Araç Listeleme ve Kiralama Deneyimi
-Kullanıcıların araçları filtreleyebildiği, özelliklerini inceleyebildiği ve rezervasyon sürecini yönettiği akış.
-
-<p align="center">
-  <img src="screenshots/car.png" width="48%" alt="Araç Filtreleme" />
-  <img src="screenshots/car2.png" width="48%" alt="Araç Detayları" />
-</p>
-<p align="center">
-  <img src="screenshots/reservation.png" width="31%" alt="Rezervasyon Yap" />
-  <img src="screenshots/rentacarprocess.png" width="31%" alt="Kiralama Adımları" />
-  <img src="screenshots/car3.png" width="31%" alt="Araç Özellikleri Detay" />
-</p>
-<p align="center">
-  <em>(Sırasıyla: Filtreleme Ekranı, Araç Kartları, Rezervasyon Yap, Süreç Adımları, Detay Sayfası)</em>
+  <em>(Sırasıyla: Giriş Yap, Kayıt Ol)</em>
 </p>
 
 ---
 
-### 📊 Süreç ve Destek Sayfaları
-Kurumsal iletişim, hizmetler ve hakkımızda bölümleri ile admin tarafındaki kiralama süreci takibi.
+### 🛠️ Yönetici (Admin) Paneli
+Admin yetkisine sahip kullanıcıların erişebildiği, tüm operasyonun yönetildiği merkez.
 
 <p align="center">
-  <img src="screenshots/service.png" width="24%" alt="Hizmetlerimiz" />
-  <img src="screenshots/about.png" width="24%" alt="Hakkımızda" />
-  <img src="screenshots/contact.png" width="24%" alt="İletişim" />
-  <img src="screenshots/admin-rentacarprocess.png" width="24%" alt="Admin Süreç Takibi" />
+  <img src="screenshots/admin-dashbaord.png" width="48%" alt="Admin Dashboard" />
+  <img src="screenshots/admin-rentacarprocess.png" width="48%" alt="Admin Süreç Takibi" />
+</p>
+<p align="center">
+  <img src="screenshots/reservation.png" width="48%" alt="Rezervasyon Yönetimi" />
+  <img src="screenshots/rentacarprocess.png" width="48%" alt="Kiralama Süreçleri" />
+</p>
+
+---
+
+### 👤 Moderatör Paneli & Profil
+Moderatörlerin içerik üretebildiği ve kendi bilgilerini yönettiği özel alan.
+
+<p align="center">
+  <img src="screenshots/moderator-dashboard.png" width="48%" alt="Moderatör Paneli" />
+  <img src="screenshots/moderator-profile.png" width="48%" alt="Moderatör Profili" />
+</p>
+
+---
+
+### 🚗 Araç Deneyimi ve Listeleme
+Kullanıcıların araçları filtreleyebildiği ve detaylarını inceleyebildiği ekranlar.
+
+<p align="center">
+  <img src="screenshots/car.jpg" width="31%" alt="Araç Filtreleme" />
+  <img src="screenshots/car2.jpg" width="31%" alt="Araç Kartları" />
+  <img src="screenshots/car3.jpg" width="31%" alt="Araç Özellikleri" />
+</p>
+
+---
+
+### 📊 Kiralama Süreci ve Kurumsal Sayfalar
+Rezervasyon başlangıcındaki filtreleme ekranından kurumsal iletişim sayfalarına kadar tüm destek süreci.
+
+<p align="center">
+  <img src="screenshots/main.png" width="48%" alt="Rezervasyon Filtreleme Başlangıç" />
+  <img src="screenshots/service.png" width="48%" alt="Hizmetlerimiz" />
+</p>
+<p align="center">
+  <img src="screenshots/about.png" width="48%" alt="Hakkımızda" />
+  <img src="screenshots/contact.png" width="48%" alt="İletişim" />
 </p>
 
 ---
@@ -131,6 +149,8 @@ Proje güvenliği için hassas veriler `appsettings.json` yerine **Secret Manage
     "SenderPassword": "your-app-password"
   }
 }
+
+```
 
 3. Migration Uygulayın:
    Package Manager Console -> Update-Database
