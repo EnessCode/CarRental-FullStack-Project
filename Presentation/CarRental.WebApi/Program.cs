@@ -39,6 +39,7 @@ using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -61,7 +62,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 	};
 });
 
-builder.Services.AddDbContext<CarRentalContext>();
+builder.Services.AddDbContext<CarRentalContext>(options =>
+{
+	options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+}); 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<ICarRepository, CarRepository>();
 builder.Services.AddScoped<IBlogRepository, BlogRepository>();

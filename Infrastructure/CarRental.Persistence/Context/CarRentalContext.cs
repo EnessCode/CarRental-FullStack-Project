@@ -10,9 +10,8 @@ namespace CarRental.Persistence.Context
 {
 	public class CarRentalContext : DbContext
 	{
-		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		public CarRentalContext(DbContextOptions<CarRentalContext> options) : base(options)
 		{
-			optionsBuilder.UseSqlServer("Server=DESKTOP-UHPV4QF\\SQLEXPRESS01;Initial Catalog=CarRentalDb;Integrated Security=true;TrustServerCertificate=true;");
 		}
 
 		public DbSet<AppUser> AppUsers { get; set; }

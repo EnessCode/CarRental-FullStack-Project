@@ -23,6 +23,34 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental.WebUI", "Frontend
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental.Dto", "Frontends\CarRental.Dto\CarRental.Dto.csproj", "{0014767A-C498-43FB-857F-EA4BA587FA45}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenshots", "screenshots", "{7763A846-C5EE-4530-BF70-34741498885F}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\ss\about.png = ..\..\..\Desktop\ss\about.png
+		..\..\..\Desktop\ss\admin-dashbaord.png = ..\..\..\Desktop\ss\admin-dashbaord.png
+		..\..\..\Desktop\ss\admin-rentacarprocess.png = ..\..\..\Desktop\ss\admin-rentacarprocess.png
+		..\..\..\Desktop\ss\blog.png = ..\..\..\Desktop\ss\blog.png
+		..\..\..\Desktop\ss\blogdetail1.png = ..\..\..\Desktop\ss\blogdetail1.png
+		..\..\..\Desktop\ss\blogdetail2.png = ..\..\..\Desktop\ss\blogdetail2.png
+		..\..\..\Desktop\ss\blogdetail3.png = ..\..\..\Desktop\ss\blogdetail3.png
+		..\..\..\Desktop\ss\car.png = ..\..\..\Desktop\ss\car.png
+		..\..\..\Desktop\ss\car2.png = ..\..\..\Desktop\ss\car2.png
+		..\..\..\Desktop\ss\car3.png = ..\..\..\Desktop\ss\car3.png
+		..\..\..\Desktop\ss\contact.png = ..\..\..\Desktop\ss\contact.png
+		..\..\..\Desktop\ss\login.png = ..\..\..\Desktop\ss\login.png
+		..\..\..\Desktop\ss\main.png = ..\..\..\Desktop\ss\main.png
+		..\..\..\Desktop\ss\moderator-dashboard.png = ..\..\..\Desktop\ss\moderator-dashboard.png
+		..\..\..\Desktop\ss\moderator-profile.png = ..\..\..\Desktop\ss\moderator-profile.png
+		..\..\..\Desktop\ss\register.png = ..\..\..\Desktop\ss\register.png
+		..\..\..\Desktop\ss\rentacarprocess.png = ..\..\..\Desktop\ss\rentacarprocess.png
+		..\..\..\Desktop\ss\reservation.png = ..\..\..\Desktop\ss\reservation.png
+		..\..\..\Desktop\ss\service.png = ..\..\..\Desktop\ss\service.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +92,7 @@ Global
 		{1459C03D-4E17-4D88-941C-C42409C0CD22} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{CE83B319-F034-498D-ABBB-4BF427FA1A29} = {0FA2ABB8-E91E-42AE-B20D-DE8900C42823}
 		{0014767A-C498-43FB-857F-EA4BA587FA45} = {0FA2ABB8-E91E-42AE-B20D-DE8900C42823}
+		{7763A846-C5EE-4530-BF70-34741498885F} = {8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6FF2DBFB-F868-4E73-A36C-70DBFAA3D7B2}
